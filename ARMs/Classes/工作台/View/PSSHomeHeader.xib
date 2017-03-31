@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PSSHomeHeader">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="165"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabBar_essence_click_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rbC-Hu-5IH">
+                    <rect key="frame" x="146" y="27.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="VJE-lW-hTo"/>
+                        <constraint firstAttribute="width" constant="50" id="zPR-TW-EOg"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---------促销员" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8Z-Vp-mgX">
+                    <rect key="frame" x="121" y="87.5" width="101" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--------店铺" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-PY-cIx">
+                    <rect key="frame" x="126" y="114.5" width="91" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="GdG-PY-cIx" firstAttribute="centerX" secondItem="r8Z-Vp-mgX" secondAttribute="centerX" id="7qn-uY-6Na"/>
+                <constraint firstItem="rbC-Hu-5IH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8Rg-u7-r6k"/>
+                <constraint firstItem="GdG-PY-cIx" firstAttribute="top" secondItem="r8Z-Vp-mgX" secondAttribute="bottom" constant="10" id="Ju2-do-AdQ"/>
+                <constraint firstItem="r8Z-Vp-mgX" firstAttribute="centerX" secondItem="rbC-Hu-5IH" secondAttribute="centerX" id="PKJ-KH-QkU"/>
+                <constraint firstItem="r8Z-Vp-mgX" firstAttribute="top" secondItem="rbC-Hu-5IH" secondAttribute="bottom" constant="10" id="n4K-Ta-kci"/>
+                <constraint firstItem="rbC-Hu-5IH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="scl-HI-UNK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameL" destination="GdG-PY-cIx" id="ath-v5-d1a"/>
+                <outlet property="userIcon" destination="rbC-Hu-5IH" id="a7o-Oe-RPV"/>
+                <outlet property="userNameL" destination="r8Z-Vp-mgX" id="D3h-Em-sLU"/>
+            </connections>
+            <point key="canvasLocation" x="19" y="-2.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabBar_essence_click_icon" width="37" height="37"/>
+    </resources>
+</document>

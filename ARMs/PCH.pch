@@ -1,0 +1,29 @@
+//
+//  PCH.pch
+//  PSSAPP
+//
+//  Created by 王伟 on 2017/3/23.
+//  Copyright © 2017年 王伟. All rights reserved.
+//
+
+#ifndef PCH_pch
+#define PCH_pch
+
+#pragma mark - 
+#pragma mark - 配置
+#import "PSSConst.h"
+#import "PSSConfig.h"
+#import <CommonElement/CommonElement.h>
+
+#pragma mark -
+#pragma mark - 弹框
+
+#pragma mark -
+#pragma mark - 常量
+
+
+#pragma mark -
+#pragma mark - 框架
+#import "Masonry.h"
+
+#endif /* PCH_pch */

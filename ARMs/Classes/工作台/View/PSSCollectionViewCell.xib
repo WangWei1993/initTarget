@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PSSCollectionViewCell" id="gTV-IL-0wX" customClass="PSSCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="178"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="178"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cY-Pj-9CG">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="178"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabBar_essence_click_icon" translatesAutoresizingMaskIntoConstraints="NO" id="f9L-CN-O5e">
+                                <rect key="frame" x="57" y="36" width="66" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="ijT-SK-c8U"/>
+                                    <constraint firstAttribute="height" constant="66" id="xaD-3k-jsE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="销售达成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nuj-FR-9aA">
+                                <rect key="frame" x="55" y="112" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8O-6o-Si6">
+                                <rect key="frame" x="152" y="8" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Iq8-Jh-zAN"/>
+                                    <constraint firstAttribute="height" constant="20" id="mCW-T5-jwq"/>
+                                </constraints>
+                                <state key="normal" image="叉叉"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nuj-FR-9aA" firstAttribute="top" secondItem="f9L-CN-O5e" secondAttribute="bottom" constant="10" id="2cx-Tx-Ris"/>
+                            <constraint firstItem="h8O-6o-Si6" firstAttribute="top" secondItem="4cY-Pj-9CG" secondAttribute="top" constant="8" id="A9I-Fq-HpX"/>
+                            <constraint firstItem="f9L-CN-O5e" firstAttribute="centerX" secondItem="4cY-Pj-9CG" secondAttribute="centerX" id="LTI-gd-Qdl"/>
+                            <constraint firstItem="Nuj-FR-9aA" firstAttribute="centerX" secondItem="4cY-Pj-9CG" secondAttribute="centerX" id="V5L-Dj-lWx"/>
+                            <constraint firstItem="f9L-CN-O5e" firstAttribute="centerY" secondItem="4cY-Pj-9CG" secondAttribute="centerY" constant="-20" id="ljI-LO-gJa"/>
+                            <constraint firstAttribute="trailing" secondItem="h8O-6o-Si6" secondAttribute="trailing" constant="8" id="wRQ-7P-MT4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4cY-Pj-9CG" secondAttribute="bottom" constant="0.5" id="DmG-0E-YBU"/>
+                <constraint firstAttribute="trailing" secondItem="4cY-Pj-9CG" secondAttribute="trailing" constant="0.5" id="XGU-SR-8Vq"/>
+                <constraint firstItem="4cY-Pj-9CG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="i07-0o-VRP"/>
+                <constraint firstItem="4cY-Pj-9CG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yyQ-mR-CEA"/>
+            </constraints>
+            <size key="customSize" width="180" height="178"/>
+            <connections>
+                <outlet property="deletBtn" destination="h8O-6o-Si6" id="l0g-J8-UeR"/>
+                <outlet property="imageV" destination="f9L-CN-O5e" id="kcq-cs-0fE"/>
+                <outlet property="nameL" destination="Nuj-FR-9aA" id="uwI-Q6-hGp"/>
+            </connections>
+            <point key="canvasLocation" x="-164" y="1"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tabBar_essence_click_icon" width="37" height="37"/>
+        <image name="叉叉" width="40" height="40"/>
+    </resources>
+</document>
